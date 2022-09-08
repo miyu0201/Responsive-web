@@ -43,11 +43,12 @@ function App() {
                   <Star color="white" size={45} />
                 </Col>
               </Navbar.Brand>
-              <Col xs={8} md lg={1} className=" d-flex flex-row-reverse">
+              <Col xs={8} md lg={8} className="d-flex flex-row-reverse">
                 <Search color="white" size={23} />
               </Col>
+
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse>
+              <Navbar.Collapse className="justify-content-end">
                 <Nav>
                   <Nav.Link href="#aboutUs">About Us</Nav.Link>
                   <Nav.Link href="#product">Product</Nav.Link>
@@ -83,46 +84,61 @@ function App() {
             <Row className="p-2 ">
               <h1>Meet our team</h1>
             </Row>
-            <Col xs={12} md lg={4} className="text-center mt-2 mb-2 ">
+            <Col xs={12} md={6} lg={3} className="text-center mt-2 mb-2 ">
               <Row className="align-items-center">
-                <Col xs={6} md lg={12}>
+                <Col xs={5} md lg={12}>
                   <Image
                     fluid
                     src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg "
                   />
                 </Col>
-                <Col xs={6} md lg={12}>
+                <Col xs={7} md lg={12}>
                   <h4>Jane Smith</h4>
                   <p>Big boss</p>
                 </Col>
               </Row>
             </Col>
 
-            <Col xs={12} md lg={4} className="text-center mt-2 mb-2 ">
+            <Col xs={12} md={6} lg={3} className="text-center mt-2 mb-2 ">
               <Row className="align-items-center">
-                <Col xs={6} md lg={12}>
+                <Col xs={5} md lg={12}>
                   <Image
                     fluid
                     src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg "
                   />
                 </Col>
-                <Col xs={6} md lg={12}>
+                <Col xs={7} md lg={12}>
                   <h4>John Doe</h4>
                   <p>Code Monkey</p>
                 </Col>
               </Row>
             </Col>
 
-            <Col xs={12} md lg={4} className="text-center mt-2 mb-2 ">
+            <Col xs={12} md={6} lg={3} className="text-center mt-2 mb-2 ">
               <Row className="align-items-center">
-                <Col xs={6} md lg={12}>
+                <Col xs={5} md lg={12}>
                   <Image
                     fluid
                     src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg "
                   />
                 </Col>
-                <Col xs={6} md lg={12}>
-                  <h4>Salvador Felipe Jacinto Domenech</h4>
+                <Col xs={7} md lg={12} className="align-items-center">
+                  <h4>Arnold Schwarz</h4>
+                  <p>CTO</p>
+                </Col>
+              </Row>
+            </Col>
+
+            <Col xs={12} md={6} lg={3} className="text-center mt-2 mb-2 ">
+              <Row className="align-items-center">
+                <Col xs={5} md lg={12}>
+                  <Image
+                    fluid
+                    src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg "
+                  />
+                </Col>
+                <Col xs={7} md lg={12} className="align-items-center">
+                  <h4>Salvador Felipe Domenech</h4>
                   <p>Big Man</p>
                 </Col>
               </Row>
@@ -144,19 +160,19 @@ function App() {
             </Col>
           </Row>
           {/*footer section*/}
-          <Row className="p-2 border-top border-4 border-dark">
-            <Col xs={12} md lg={8} className="p-5">
+          <Row className="p-5 border-top border-4 border-dark">
+            <Col xs={12} md lg={6} className="p-5">
               <Row className="d-flex justify-content-center">
-                <Col xs={2}>
+                <Col xs={2} className="d-flex justify-content-center">
                   <Facebook color="black" size={20} />
                 </Col>
-                <Col xs={2}>
+                <Col xs={2} className="d-flex justify-content-center">
                   <Twitter color="black" size={20} />
                 </Col>
-                <Col xs={2}>
+                <Col xs={2} className="d-flex justify-content-center">
                   <Linkedin color="black" size={20} />
                 </Col>
-                <Col xs={2}>
+                <Col xs={2} className="d-flex justify-content-center">
                   <PlayBtn color="black" size={20} />
                 </Col>
               </Row>
@@ -165,7 +181,7 @@ function App() {
             <Col
               xs={12}
               md
-              lg={2}
+              lg={3}
               className="d-flex justify-content-center my-auto"
             >
               <Star color="royalblue" size={75} />
@@ -174,10 +190,10 @@ function App() {
             <Col
               xs={12}
               md
-              lg={2}
+              lg={3}
               className="d-flex justify-content-center my-auto "
             >
-              <Row className="d-flex justify-content-center my-4 ">
+              <Row className="d-flex justify-content-center my-5 ">
                 <h2>Company</h2>
               </Row>
             </Col>
