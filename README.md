@@ -1,3 +1,12 @@
+<h1>Start </h1>
+
+Clone repo and go to folder
+
+<p>install all dependencies using  npm i</p>
+<p>  npm start</p>
+It will open web automatically in browser
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
