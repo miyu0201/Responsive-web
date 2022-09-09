@@ -32,13 +32,12 @@ function App() {
                 dolore tristique adipiscing elit quam facilisis vel ut sed.
               </p>
             </Col>
-                      <Col xs={12} md lg={6} className="d-flex">
-                          
+            <Col xs={12} md lg={6} className="d-flex">
               <Image
                 fluid
                 thumbnail
                 src="https://www.impactplus.com/hubfs/blog-image-uploads/best-about-us-pages.jpg "
-                              />
+              />
             </Col>
           </Row>
           {/*team section*/}
