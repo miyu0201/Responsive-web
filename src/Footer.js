@@ -1,13 +1,7 @@
 import React from "react";
 
 import { Col, Row } from "react-bootstrap/";
-import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  PlayBtn,
-  Star
-} from "react-bootstrap-icons";
+import {Facebook, Twitter,Linkedin,PlayBtn, Star} from "react-bootstrap-icons";
 
 function Footer() {
   return (

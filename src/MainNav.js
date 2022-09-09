@@ -24,9 +24,9 @@ function MainNav() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse className="justify-content-end">
         <Nav>
-          <Nav.Link href="#aboutUs">About Us</Nav.Link>
+          <Nav.Link href="#aboutUs">About us</Nav.Link>
           <Nav.Link href="#product">Product</Nav.Link>
-          <Nav.Link href="#contact"> Contact</Nav.Link>
+          <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
