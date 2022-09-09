@@ -32,11 +32,13 @@ function App() {
                 dolore tristique adipiscing elit quam facilisis vel ut sed.
               </p>
             </Col>
-            <Col xs={12} md lg={6} className="d-flex justify-content-center">
+                      <Col xs={12} md lg={6} className="d-flex">
+                          
               <Image
                 fluid
+                thumbnail
                 src="https://www.impactplus.com/hubfs/blog-image-uploads/best-about-us-pages.jpg "
-              />
+                              />
             </Col>
           </Row>
           {/*team section*/}
@@ -115,7 +117,10 @@ function App() {
               </p>
             </Col>
             <Col xs={12} md lg={{ span: 2, offset: 2 }} className="my-auto ">
-              <Button className="btn btn-primary w-100 mt-5" onClick={handleClick}>
+              <Button
+                className="btn btn-primary w-100 mt-5"
+                onClick={handleClick}
+              >
                 Contact us
               </Button>
             </Col>
