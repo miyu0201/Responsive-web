@@ -1,26 +1,10 @@
 import React from "react";
-
-import {
-  Stack,
-  Container,
-  Col,
-  Row,
-  Image,
-  Button,
-  Navbar,
-  Nav,
-} from "react-bootstrap/";
-import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  PlayBtn,
-  Search,
-  Star,
-} from "react-bootstrap-icons";
+import MainNav from "./MainNav.js";
+import Footer from "./Footer.js";
+import { Stack, Container, Col, Row, Image, Button } from "react-bootstrap/";
 
 function App() {
-  const handleClick = (e) => {
+  const handleClick = e => {
     e.preventDefault();
     console.log("message sent!");
   };
@@ -28,38 +12,14 @@ function App() {
   return (
     <div>
       <Container>
-        <Stack gap={3}>
+        <Stack className="px-5" gap={3}>
           {/*Nav bar*/}
-          <Row>
-            <Navbar
-              collapseOnSelect
-              expand="lg"
-              bg="dark"
-              variant="dark"
-              className="p-3"
-            >
-              <Navbar.Brand href="#home">
-                <Col>
-                  <Star color="white" size={45} />
-                </Col>
-              </Navbar.Brand>
-              <Col xs={8} md lg={8} className="d-flex flex-row-reverse">
-                <Search color="white" size={23} />
-              </Col>
-
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse className="justify-content-end">
-                <Nav>
-                  <Nav.Link href="#aboutUs">About Us</Nav.Link>
-                  <Nav.Link href="#product">Product</Nav.Link>
-                  <Nav.Link href="#contact"> Contact</Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
+          <Row className="py-4">
+            <MainNav />
           </Row>
           {/*about us section*/}
-          <Row className="p-5">
-            <Col xs={12} md lg={6}>
+          <Row className="py-5">
+            <Col xs={12} md lg xl={6}>
               <h1>About us</h1>
               <p>
                 Lorem ipsum dolor sit amet platea dolore tristique adipiscing
@@ -72,7 +32,7 @@ function App() {
                 dolore tristique adipiscing elit quam facilisis vel ut sed.
               </p>
             </Col>
-            <Col xs={12} md lg={6}>
+            <Col xs={12} md lg={6} className="d-flex justify-content-center">
               <Image
                 fluid
                 src="https://www.impactplus.com/hubfs/blog-image-uploads/best-about-us-pages.jpg "
@@ -80,7 +40,7 @@ function App() {
             </Col>
           </Row>
           {/*team section*/}
-          <Row className="p-5 border-top border-4 border-dark">
+          <Row className="py-5 border-top border-4 border-dark">
             <Row className="p-2 ">
               <h1>Meet our team</h1>
             </Row>
@@ -137,15 +97,16 @@ function App() {
                     src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg "
                   />
                 </Col>
+
                 <Col xs={7} md lg={12} className="align-items-center">
-                  <h4>Salvador Felipe Domenech</h4>
+                  <h4>Salvador Felipe</h4>
                   <p>Big Man</p>
                 </Col>
               </Row>
             </Col>
           </Row>
           {/*work with us section*/}
-          <Row className="p-5 border-top border-4 border-dark">
+          <Row className="py-5 border-top border-4 border-dark">
             <Col xs={12} md lg={8}>
               <h1>Work with us</h1>
               <p>
@@ -154,50 +115,13 @@ function App() {
               </p>
             </Col>
             <Col xs={12} md lg={{ span: 2, offset: 2 }} className="my-auto ">
-              <Button className="btn btn-primary w-100" onClick={handleClick}>
+              <Button className="btn btn-primary w-100 mt-5" onClick={handleClick}>
                 Contact us
               </Button>
             </Col>
           </Row>
           {/*footer section*/}
-          <Row className="p-5 border-top border-4 border-dark">
-            <Col xs={12} md lg={6} className="p-5">
-              <Row className="d-flex justify-content-center">
-                <Col xs={2} className="d-flex justify-content-center">
-                  <Facebook color="black" size={20} />
-                </Col>
-                <Col xs={2} className="d-flex justify-content-center">
-                  <Twitter color="black" size={20} />
-                </Col>
-                <Col xs={2} className="d-flex justify-content-center">
-                  <Linkedin color="black" size={20} />
-                </Col>
-                <Col xs={2} className="d-flex justify-content-center">
-                  <PlayBtn color="black" size={20} />
-                </Col>
-              </Row>
-            </Col>
-
-            <Col
-              xs={12}
-              md
-              lg={3}
-              className="d-flex justify-content-center my-auto"
-            >
-              <Star color="royalblue" size={75} />
-            </Col>
-
-            <Col
-              xs={12}
-              md
-              lg={3}
-              className="d-flex justify-content-center my-auto "
-            >
-              <Row className="d-flex justify-content-center my-5 ">
-                <h2>Company</h2>
-              </Row>
-            </Col>
-          </Row>
+          <Footer />
         </Stack>
       </Container>
     </div>
