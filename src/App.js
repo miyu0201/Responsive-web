@@ -53,7 +53,7 @@ function App() {
                     src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg "
                   />
                 </Col>
-                <Col xs={7} md lg={12}>
+                <Col xs={7} md lg={12} className="mt-3">
                   <h4>Jane Smith</h4>
                   <p>Big boss</p>
                 </Col>
@@ -68,7 +68,7 @@ function App() {
                     src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg "
                   />
                 </Col>
-                <Col xs={7} md lg={12}>
+                <Col xs={7} md lg={12} className="mt-3">
                   <h4>John Doe</h4>
                   <p>Code Monkey</p>
                 </Col>
@@ -83,7 +83,7 @@ function App() {
                     src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg "
                   />
                 </Col>
-                <Col xs={7} md lg={12} className="align-items-center">
+                <Col xs={7} md lg={12} className="mt-3">
                   <h4>Arnold Schwarz</h4>
                   <p>CTO</p>
                 </Col>
@@ -99,7 +99,7 @@ function App() {
                   />
                 </Col>
 
-                <Col xs={7} md lg={12} className="align-items-center">
+                <Col xs={7} md lg={12} className="mt-3">
                   <h4>Salvador Felipe</h4>
                   <p>Big Man</p>
                 </Col>
